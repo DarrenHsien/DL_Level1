@@ -62,10 +62,23 @@
 
 ### 4.tensorflow metric select
 
-	-迴歸時採用
+	-迴歸時採用評估函式
+		-mae
+		
+	-分類時採用評估函式
+		-accuracy
 
-	-分類時採用
+### 5.tensorflow model loss func select
 
+	-迴歸時採用損失函式
+		-mse
+		
+	-分類時採用損失函式
+		-sparse_categorical_crossentropy
 
+### 6.tensorflow.keras.callbacks
 
-
+	-EarlyStopping : 當監視的項目停止改善時，停止訓練。
+		
+		-monitor : 要監視的項目
+		-patience : 沒有改善的時期數，之後訓練將停止。
