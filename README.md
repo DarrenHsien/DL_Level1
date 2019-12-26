@@ -36,9 +36,14 @@
 		
 	-Flatten : 圖像的格式從二維數組（28 x 28像素）轉換為一維數組（28 * 28 = 784像素）該層沒有學習參數。它只會重新格式化數據。
 		
-		-input_shape : 
+		-input_shape : (H , W)
 		-data_format : 須給定數據為 channels_last channels_first(默認channels_last)
-
+	
+	-Dense : 緊密連接或完全連接的神經層
+		
+		-units : 輸出空間維度
+		-activation : 要使用的激活功能。如果您未指定任何內容，則不會應用任何激活
+	
 	-Activation : 激活函數
 	
 	-BatchNormalization : 針對每批上層之激活函數輸出值標準化(中心0標準差1)
