@@ -33,6 +33,11 @@
 		-pool_size : (vertical, horizontal)
 		-strides : 移動步伐(默認pool_size)
 		-padding : 是否填補0於外圍(valid or same)
+		
+	-Flatten : 圖像的格式從二維數組（28 x 28像素）轉換為一維數組（28 * 28 = 784像素）該層沒有學習參數。它只會重新格式化數據。
+		
+		-input_shape : 
+		-data_format : 須給定數據為 channels_last channels_first(默認channels_last)
 
 	-Activation : 激活函數
 	
