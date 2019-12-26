@@ -60,8 +60,11 @@
 	-RMSprop
 	-Adam
 
+### 4.tensorflow metric select
 
+	-迴歸時採用
 
+	-分類時採用
 
 
 
