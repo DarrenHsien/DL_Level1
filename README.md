@@ -18,13 +18,29 @@
 		-fill_mode : 超出邊界處理
 		IDG.flow(image,batch_size= 1 ,save_to_dir=outputPath,save_prefix=prefix,save_format= 'jpg' ) 
 
+### 2.tensorflow.keras.layers
+	
+	-Conv2D : 二維卷基層(卷積層)
+		
+		-filter : 輸出過濾器的數目
+		-kerbel_size : 卷積核大小
+		-strides : 卷積核移動步伐
+		-padding : 是否填補0於外圍(valid or same)
+		-input_shape : (height , width , depth)
+	
+	-MaxPooling2D : 最大值精簡矩陣(池化層)
+		
+		-pool_size : (vertical, horizontal)
+		-strides : 移動步伐(默認pool_size)
+		-padding : 是否填補0於外圍(valid or same)
 
-
-
-
-
-
-
+	-Activation : 激活函數
+	
+	-BatchNormalization : 針對每批上層之激活函數輸出值標準化(中心0標準差1)
+		
+		-axis : 需歸一化的特徵軸(需參考channels_first(axis = 1) or channels_last(axis = 0))
+		
+	-Dropout : 
 
 
 
