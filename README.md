@@ -59,7 +59,11 @@
 	-Adagrad
 	-RMSprop
 	-Adam
-
+	-schedules : 自定義訓練最佳化程序(用於搭配上述幾種最佳化方法)
+		tf.keras.optimizers.schedules.InverseTimeDecay(  0.001,
+								  decay_steps=STEPS_PER_EPOCH*1000,
+								  decay_rate=1,
+		
 ### 4.tensorflow metric select
 
 	-迴歸時採用評估函式
