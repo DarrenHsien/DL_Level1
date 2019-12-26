@@ -71,6 +71,7 @@
 		
 	-分類時採用評估函式
 		-accuracy
+		-binary_crossentropy
 
 ### 5.tensorflow model loss func select
 
@@ -79,6 +80,7 @@
 		
 	-分類時採用損失函式
 		-sparse_categorical_crossentropy
+		-binary_crossentropy
 
 ### 6.tensorflow.keras.callbacks
 
