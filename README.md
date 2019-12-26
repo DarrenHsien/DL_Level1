@@ -53,6 +53,12 @@
 	-Dropout : 
 
 
+### 3.tensorflow.keras.optimizer 
+	
+	-SGD
+	-Adagrad
+	-RMSprop
+	-Adam
 
 
 
